@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{A37BFC58-8806-4F92-ADE7-14ED08F6A248}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/values/styles.xml">
+    <Files>
+      <File FileName="iOS/AppDelegate.cs" Line="31" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Droid/MainActivity.cs" Line="35" Column="2" />
+      <File FileName="Droid/Resources/values/styles.xml" Line="14" Column="55" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/iOS/AppDelegate.cs" relfile="iOS/AppDelegate.cs" line="70" column="1" />
+      <Breakpoint file="/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/iOS/AppDelegate.cs" relfile="iOS/AppDelegate.cs" line="75" column="1" />
+      <Breakpoint file="/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/iOS/AppDelegate.cs" relfile="iOS/AppDelegate.cs" line="31" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FacebookClientSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.567BF666-89CB-47EA-844F-119CC2C22AB6" />
+  <MonoDevelop.Ide.ItemProperties.FacebookClientSample.Droid PreferredExecutionTarget="Android.SelectDevice" />
+</Properties>

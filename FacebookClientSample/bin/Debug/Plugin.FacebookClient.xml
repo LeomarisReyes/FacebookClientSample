@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.FacebookClient</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.FacebookClient.CrossFacebookClient">
+            <summary>
+            Cross platform FacebookClient implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.FacebookClient.CrossFacebookClient.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+    </members>
+</doc>
