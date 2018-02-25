@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookClientSample.MyProfile">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="FillAndExpand" Spacing="2" BackgroundColor="Silver">
-            <StackLayout HeightRequest="120">
+            <StackLayout HeightRequest="170">
                 <AbsoluteLayout>
                     <Image Source="{Binding Cover}"  Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"/>
-                      <Frame CornerRadius="360" OutlineColor="Teal" HasShadow="true" HeightRequest="100" WidthRequest="50">
+                      <Frame CornerRadius="360" OutlineColor="Teal" HasShadow="true" HeightRequest="140" WidthRequest="60">
                         <Image Source="{Binding Picture}" />
                     </Frame>
                     <Label Text="{Binding FullName}" FontSize="15" TextColor="White" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1" />

@@ -24,12 +24,12 @@ namespace FacebookClientSample
         {
             CrossFacebookClient.Current.Logout();
             FacebookResponse<bool> resp = await CrossFacebookClient.Current.LoginAsync(new string[] { "email" });
-            FacebookResponse<Dictionary<string, object>> permiso = await CrossFacebookClient.Current.RequestUserDataAsync(new string[] { "id", "name" , "gender", "picture", "cover", "friends" }, new string[] { "email", "public_profile", "user_friends" });
+            FacebookResponse<Dictionary<string, object>> attrs = await CrossFacebookClient.Current.RequestUserDataAsync(new string[] { "id", "name" , "gender", "picture", "cover", "friends" }, new string[] { "email", "public_profile", "user_friends" });
 
-            ProfileData.FullName    = permiso.Data["name"].ToString(); 
-            ProfileData.Gender      = permiso.Data["gender"].ToString(); 
-            ProfileData.Cover       = new UriImageSource   { Uri = new System.Uri(Utilities.jsons(permiso.Data["cover"].ToString(), "source")) };
-            ProfileData.Picture     = new UriImageSource { Uri = new System.Uri(Utilities.jsons(permiso.Data["picture"].ToString(), "url" , "data"))};
+            ProfileData.FullName    = attrs.Data["name"].ToString(); 
+            ProfileData.Gender      = attrs.Data["gender"].ToString(); 
+            ProfileData.Cover       = new UriImageSource   { Uri = new System.Uri(Utilities.jsons(attrs.Data["cover"].ToString(), "source")) };
+            ProfileData.Picture     = new UriImageSource { Uri = new System.Uri(Utilities.jsons(attrs.Data["picture"].ToString(), "url" , "data"))};
 
 			await Navigation.PushAsync(new MyProfile());
         }

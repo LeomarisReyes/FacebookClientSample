@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:FacebookClientSample" x:Class="FacebookClientSample.FacebookClientSamplePage">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver">
-            <Label Text="My Friends" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Start" />
-            <Button Text="Loggin" Clicked="Handle_Clicked" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
-            </Button>
+        <StackLayout Spacing="3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver">
+             <Button Text="Login With Facebook" BackgroundColor="#819FF7" Clicked="Handle_Clicked" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+            </Button> 
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

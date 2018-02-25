@@ -47,7 +47,7 @@
       <DependentUpon>MyProfile.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ProfileDataViewModel.cs" />
-    <Compile Include="Utilities.cs" />
+    <Compile Include="ViewModels\Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

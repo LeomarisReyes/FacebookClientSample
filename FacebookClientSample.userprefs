@@ -1,26 +1,28 @@
 ﻿<Properties StartupConfiguration="{A37BFC58-8806-4F92-ADE7-14ED08F6A248}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="FacebookClientSample/Views/FacebookClientSamplePage.cs">
     <Files>
-      <File FileName="FacebookClientSample/Views/FacebookClientSamplePage.cs" Line="41" Column="36" />
-      <File FileName="FacebookClientSample/Views/MyProfile.xaml" Line="19" Column="15" />
-      <File FileName="FacebookClientSample/Views/MyProfile.xaml.cs" Line="19" Column="15" />
-      <File FileName="FacebookClientSample/Utilities.cs" Line="12" Column="80" />
+      <File FileName="FacebookClientSample/Views/FacebookClientSamplePage.cs" Line="32" Column="102" />
+      <File FileName="FacebookClientSample/Views/MyProfile.xaml" Line="17" Column="15" />
+      <File FileName="FacebookClientSample/Views/MyProfile.xaml.cs" Line="15" Column="30" />
+      <File FileName="FacebookClientSample/ViewModels/Utilities.cs" Line="1" Column="1" />
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="FacebookClientSample/Views/FacebookClientSamplePage.xaml" Line="20" Column="15" />
+      <File FileName="FacebookClientSample/obj/Debug/FacebookClientSample.Views.FacebookClientSamplePage.xaml.g.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>jo2</Value>
+          <Value>jo2.Parent</Value>
           <Value>jo</Value>
+          <Value>jo.ContainsKey("f]")</Value>
+          <Value>jo.GetValue("source")</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/Views/FacebookClientSamplePage.cs" relfile="FacebookClientSample/Views/FacebookClientSamplePage.cs" line="35" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
