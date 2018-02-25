@@ -8,7 +8,7 @@ namespace FacebookClientSample
         {
             InitializeComponent();
 
-            MainPage = new FacebookClientSamplePage();
+            MainPage = new NavigationPage(new FacebookClientSamplePage());
         }
 
         protected override void OnStart()
