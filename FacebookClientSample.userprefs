@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{A37BFC58-8806-4F92-ADE7-14ED08F6A248}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/Resources/values/styles.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookClientSample/.gitignore">
     <Files>
       <File FileName="iOS/AppDelegate.cs" Line="31" Column="1" />
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
       <File FileName="Droid/MainActivity.cs" Line="35" Column="2" />
       <File FileName="Droid/Resources/values/styles.xml" Line="14" Column="55" />
+      <File FileName="FacebookClientSample/.gitignore" Line="2" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
