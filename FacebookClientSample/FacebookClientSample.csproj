@@ -47,6 +47,7 @@
       <DependentUpon>MyProfile.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ProfileDataViewModel.cs" />
+    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -66,6 +67,9 @@
     </Reference>
     <Reference Include="Plugin.FacebookClient">
       <HintPath>..\packages\Plugin.FacebookClient.1.0.2\lib\netstandard1.0\Plugin.FacebookClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

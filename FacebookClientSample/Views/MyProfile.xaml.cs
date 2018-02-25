@@ -10,8 +10,13 @@ namespace FacebookClientSample
         public MyProfile()
         {
             InitializeComponent();
-            BindingContext = new { FullName = ProfileData.FullName , Picture = ProfileData.Picture ,
-                                   Gender   = ProfileData.Gender};
+            BindingContext = new
+            {
+                FullName = ProfileData.FullName,
+                Picture = ProfileData.Picture,
+                Gender = ProfileData.Gender,
+                Cover = ProfileData.Cover
+            }; 
             // BindingContext = new ProfileData();
         }
     }

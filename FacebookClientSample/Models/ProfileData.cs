@@ -7,6 +7,7 @@ namespace FacebookClientSample
     {
         public static string FullName { get; set; }
         public static string Gender   { get; set; }
-        public static UriImageSource Picture  { get; set; }
+        public static UriImageSource Cover  { get; set; }
+        public static UriImageSource Picture { get; set; }
     }
 }

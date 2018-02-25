@@ -24,3 +24,5 @@
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.dll
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.pdb
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.csprojResolveAssemblyReference.cache
+/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/bin/Debug/Newtonsoft.Json.dll
+/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/bin/Debug/Newtonsoft.Json.xml
