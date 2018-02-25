@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookClientSample.MyProfile">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" Spacing="2" BackgroundColor="Silver">
+            <StackLayout HeightRequest="120">
+                <AbsoluteLayout>
+                    <Image Source="{Binding Picture}}"  Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"/>
+                      <Frame CornerRadius="360" OutlineColor="Teal" HasShadow="true" HeightRequest="100" WidthRequest="50">
+                        <Image Source="{Binding Picture}}" />
+                    </Frame>
+                    <Label Text="{Binding FullName}" FontSize="15" TextColor="White" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1" />
+                </AbsoluteLayout>
+           </StackLayout>
+            
+            <Label x:Name="fbDataGender" Text="{Binding Gender}"   TextColor="Blue" HorizontalTextAlignment="Center" />
+            <Label x:Name="fbDataLocale" Text="{Binding Locale}"   TextColor="Blue" HorizontalTextAlignment="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
