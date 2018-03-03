@@ -4,11 +4,14 @@ namespace FacebookClientSample
 {
     public partial class App : Application
     {
+		public static INavigation Navigation { get; set; }
+
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new FacebookClientSamplePage());
+            var navPage = new NavigationPage(new FacebookClientSamplePage());
+            Navigation = navPage.Navigation;
+            MainPage = navPage;
         }
 
         protected override void OnStart()

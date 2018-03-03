@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookClientSample.MyProfile">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand" Spacing="2" BackgroundColor="Silver">
+        <StackLayout HorizontalOptions="FillAndExpand" Spacing="2" BackgroundColor="White">
             <StackLayout HeightRequest="170">
                 <AbsoluteLayout>
                     <Image Source="{Binding Cover}"  Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"/>
@@ -10,8 +10,11 @@
                     </Frame>
                     <Label Text="{Binding FullName}" FontSize="15" TextColor="White" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1" />
                 </AbsoluteLayout>
-           </StackLayout> 
-            <Label x:Name="fbDataGender" Text="{Binding Gender}"   TextColor="Blue" HorizontalTextAlignment="Center" />
-           </StackLayout>
+            </StackLayout> 
+            <StackLayout x:Name="Post" Spacing="1">
+                <Editor x:Name="texto" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" HeightRequest="60" Keyboard="Chat" ></Editor>
+<!--                <Button Text="Send" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" Clicked="Handle_Clicked"  ></Button>-->
+            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

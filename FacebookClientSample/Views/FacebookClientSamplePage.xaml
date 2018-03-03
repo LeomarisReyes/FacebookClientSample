@@ -2,9 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:FacebookClientSample" x:Class="FacebookClientSample.FacebookClientSamplePage">
     <ContentPage.Content>
         <StackLayout Spacing="3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="Silver">
-             <Button Text="Login With Facebook" BackgroundColor="#819FF7" Clicked="Handle_Clicked" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
-            </Button> 
-
+             <Button Text="Login With Facebook" BackgroundColor="#819FF7"  VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Command="{Binding LogInAndFillData}"></Button>  
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
