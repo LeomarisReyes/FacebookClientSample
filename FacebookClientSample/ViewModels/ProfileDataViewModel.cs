@@ -12,31 +12,28 @@ namespace FacebookClientSample.ViewModels
     
     public class ProfileDataViewModel
     {
-		public Command     LogInAndFillData { get; set; } 
+        public ProfileData      Profile          { get; set; }
+		public Command          LogInAndFillData { get; set; }
+        static FacebookResponse<Dictionary<string, object>> attrs;
+
         public ProfileDataViewModel()
-        { 
-            LogInAndFillData = new Command(FillPrincipalData); 
-        } 
-         
+        {
+            LogInAndFillData = new Command(FillPrincipalData);
+            FillData();
+        }
+
         public async void FillPrincipalData(){
-			CrossFacebookClient.Current.Logout();
              
 			FacebookResponse<bool> resp = await CrossFacebookClient.Current.LoginAsync
 	        (
 	               new string[] { "email" }
-	         );
-	             
-		    FacebookResponse<Dictionary<string, object>> attrs = await CrossFacebookClient.Current.RequestUserDataAsync
-	        (
-	               new string[] { "id"   , "name", "gender", "picture",    "cover", "friends" }, 
-	               new string[] { "email", "public_profile", "user_friends" }
 	        );
-				//
-			ProfileData.FullName = attrs.Data["name"].ToString();
-			ProfileData.Gender   = attrs.Data["gender"].ToString();
-			ProfileData.Cover    = new UriImageSource { Uri = new System.Uri(Utilities.JsonConvert(attrs.Data["cover"].ToString(), "source")) };
-			ProfileData.Picture  = new UriImageSource { Uri = new System.Uri(Utilities.JsonConvert(attrs.Data["picture"].ToString(), "url", "data")) };
-            
+	             
+		    attrs = await CrossFacebookClient.Current.RequestUserDataAsync
+	        (
+	               new string[] { "id"   , "name", "picture", "cover", "friends" }, 
+	               new string[] { "email", "public_profile" , "user_friends"     }
+	        ); 
 	        await App.Navigation.PushAsync(new MyProfile());
 		}
 
@@ -51,5 +48,17 @@ namespace FacebookClientSample.ViewModels
                                                            );
         }
 
-    }
+		private void FillData()
+		{
+			if (attrs != null)
+				Profile = new ProfileData
+				{
+					FullName = attrs.Data["name"].ToString(),
+					Cover = new UriImageSource { Uri = new System.Uri(Utilities.JsonConvert(attrs.Data["cover"].ToString(), "source")) },
+					Picture = new UriImageSource { Uri = new System.Uri(Utilities.JsonConvert(attrs.Data["picture"].ToString(), "url", "data")) }
+				};
+		}
+
+
+	}
 }

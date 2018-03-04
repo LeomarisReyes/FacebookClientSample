@@ -4,11 +4,11 @@
         <StackLayout HorizontalOptions="FillAndExpand" Spacing="2" BackgroundColor="White">
             <StackLayout HeightRequest="170">
                 <AbsoluteLayout>
-                    <Image Source="{Binding Cover}"  Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"/>
+                    <Image Source="{Binding Profile.Cover}"  Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1"/>
                       <Frame CornerRadius="360" OutlineColor="Teal" HasShadow="true" HeightRequest="140" WidthRequest="60">
-                        <Image Source="{Binding Picture}" />
+                        <Image Source="{Binding Profile.Picture}" />
                     </Frame>
-                    <Label Text="{Binding FullName}" FontSize="15" TextColor="White" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1" />
+                    <Label Text="{Binding Profile.FullName}" FontSize="15" TextColor="White" FontAttributes="Bold" AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,1,-1,-1" />
                 </AbsoluteLayout>
             </StackLayout> 
             <StackLayout x:Name="Post" Spacing="1">

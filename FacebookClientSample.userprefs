@@ -1,32 +1,15 @@
 ﻿<Properties StartupConfiguration="{A37BFC58-8806-4F92-ADE7-14ED08F6A248}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookClientSample/Views/MyProfile.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookClientSample/ViewModels/ProfileDataViewModel.cs">
     <Files>
-      <File FileName="FacebookClientSample/Views/MyProfile.xaml.cs" Line="20" Column="16" />
-      <File FileName="FacebookClientSample/ViewModels/ProfileDataViewModel.cs" Line="19" Column="10" />
-      <File FileName="FacebookClientSample/Views/MyProfile.xaml" Line="7" Column="45" />
+      <File FileName="FacebookClientSample/Views/MyProfile.xaml.cs" Line="22" Column="57" />
+      <File FileName="FacebookClientSample/ViewModels/ProfileDataViewModel.cs" Line="48" Column="13" />
+      <File FileName="FacebookClientSample/Views/MyProfile.xaml" Line="21" Column="1" />
       <File FileName="FacebookClientSample/Views/FacebookClientSamplePage.cs" Line="10" Column="4" />
       <File FileName="FacebookClientSample/Views/FacebookClientSamplePage.xaml" Line="8" Column="15" />
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="FacebookClientSample/Models/ProfileData.cs" Line="15" Column="10" />
+      <File FileName="FacebookClientSample/ViewModels/FbManagerViewModel.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="FacebookClientSample" expanded="True">
-            <Node name="FacebookClientSample" expanded="True">
-              <Node name="Helpers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="FacebookClientSamplePage.xaml" expanded="True" />
-                <Node name="MyProfile.xaml" expanded="True" selected="True" />
-              </Node>
-              <Node name="App.xaml" expanded="True" />
-            </Node>
-            <Node name="FacebookClientSample.iOS" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
