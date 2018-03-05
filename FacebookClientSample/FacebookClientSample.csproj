@@ -48,7 +48,6 @@
     </Compile>
     <Compile Include="ViewModels\ProfileDataViewModel.cs" />
     <Compile Include="Helpers\Utilities.cs" />
-    <Compile Include="ViewModels\FbManagerViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

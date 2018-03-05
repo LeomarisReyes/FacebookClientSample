@@ -1,3 +1,7 @@
+/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.csproj.CoreCompileInputs.cache
+/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.App.xaml.g.cs
+/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.Views.FacebookClientSamplePage.xaml.g.cs
+/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.Views.MyProfile.xaml.g.cs
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/bin/Debug/FacebookClientSample.dll
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/bin/Debug/FacebookClientSample.pdb
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/bin/Debug/Newtonsoft.Json.dll
@@ -21,10 +25,5 @@
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/bin/Debug/Plugin.FacebookClient.xml
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/bin/Debug/Newtonsoft.Json.xml
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/bin/Debug/PropertyChanged.xml
-/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.csprojResolveAssemblyReference.cache
-/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.csproj.CoreCompileInputs.cache
-/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.App.xaml.g.cs
-/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.Views.FacebookClientSamplePage.xaml.g.cs
-/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.Views.MyProfile.xaml.g.cs
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.dll
 /Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/obj/Debug/FacebookClientSample.pdb

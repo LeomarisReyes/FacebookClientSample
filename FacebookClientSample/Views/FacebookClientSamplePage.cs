@@ -7,11 +7,9 @@ namespace FacebookClientSample
     { 
         public FacebookClientSamplePage()
         {
-			ProfileDataViewModel PVM = new ProfileDataViewModel();
-
 			InitializeComponent();
 
-			BindingContext = PVM;
+			BindingContext = new ProfileDataViewModel();
 
             if(Device.RuntimePlatform == Device.iOS)
             {
