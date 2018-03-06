@@ -19,19 +19,5 @@ namespace FacebookClientSample
             }
         }
 
-		public static string JsonConvert2(string json, string child, string parent = null)
-		{
-            var jo = JObject.Parse(json.Replace(" = ", ":").Replace(";", ","));
-			if (parent != null)
-			{
-				return jo[parent][child].ToString();
-			}
-			else
-			{
-				return jo.GetValue(child).ToString();
-			}
-
-			//jo["data"][0]["message"].ToString()
-		}
     }
 }
