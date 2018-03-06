@@ -4,13 +4,12 @@ using Xamarin.Forms;
 
 namespace FacebookClientSample
 {
-    public class ProfileData // : INotifyPropertyChanged
+    public class ProfileData 
     {
 		public  string            FullName { get; set; }
 		public  UriImageSource    Cover    { get; set; }
 		public  UriImageSource    Picture  { get; set; }
         public  String MessagePosted       { get; set; }
-
-     //   public event PropertyChangedEventHandler PropertyChanged;
+        public  String Story               { get; set; }
     }
 }

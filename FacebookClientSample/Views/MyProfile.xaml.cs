@@ -12,6 +12,7 @@ namespace FacebookClientSample
         { 
             InitializeComponent();
             BindingContext = new ProfileDataViewModel();
+            //lbPost.ItemsSource = new string[]{ "uno", "dos" , "tres"};
         }
  
     }

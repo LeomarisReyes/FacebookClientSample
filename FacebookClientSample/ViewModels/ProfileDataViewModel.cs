@@ -1,34 +1,34 @@
-﻿using System; using System.Collections.Generic; using System.ComponentModel; using System.Runtime.CompilerServices; using System.Windows.Input; using Plugin.FacebookClient; using Plugin.FacebookClient.Abstractions; using Xamarin.Forms;  namespace FacebookClientSample.ViewModels {
+﻿using System; using System.Collections.Generic; using System.Collections.ObjectModel;
+using System.ComponentModel; using System.Runtime.CompilerServices; using System.Windows.Input; using Newtonsoft.Json.Linq;
+using Plugin.FacebookClient; using Plugin.FacebookClient.Abstractions; using Xamarin.Forms;  namespace FacebookClientSample.ViewModels {
 
 	public class ProfileDataViewModel : INotifyPropertyChanged
-	{
-		public ProfileData Profile { get; set; }
-		public Command FillPrincipalDataCommand { get; set; }
-		public Command<string> PostMessageCommand { get; set; }
+	{         public List<ProfileData> ListPostedMessages       { get; set; }
+		public ProfileData       Profile                  { get; set; }
+		public Command           FillPrincipalDataCommand { get; set; }
+		public Command<string>   PostMessageCommand       { get; set; }
+		public string            MessagePost              { get; set; } = string.Empty; 
 		static FacebookResponse<Dictionary<string, object>> attrs;
-           
-		public string MessagePost { get; set; } = string.Empty;
-
+		static bool              IsLogin;
+		string Message           = string.Empty;
+		string Story             = string.Empty; 
 		public ProfileDataViewModel()
 		{
 			FillPrincipalDataCommand = new Command(FillPrincipalData);
 			PostMessageCommand = new Command<string>(PostMessage);
-			FillData();
+			FillData();             ReadPost();
 		}
 
 		public async void FillPrincipalData()
 		{
 
-			FacebookResponse<bool> resp = await CrossFacebookClient.Current.LoginAsync
-			(
-					new string[] { "email" }
-			   );
-
+			FacebookResponse<bool> resp = await CrossFacebookClient.Current.LoginAsync ( new string[] { "email" }  ); 
 			attrs = await CrossFacebookClient.Current.RequestUserDataAsync
-		 (
+		  (
 				  new string[] { "id", "name", "picture", "cover", "friends" },
 				  new string[] { "email", "public_profile", "user_friends" }
 		  );
+            IsLogin = true;
 			await App.Navigation.PushAsync(new MyProfile());
 		}
 
@@ -41,6 +41,22 @@
 																   {"message" ,message}
 															   }
 															);             MessagePost = string.Empty;
+		}
+
+		public async void ReadPost()
+		{             if (IsLogin)
+            {
+                FacebookResponse<string> post = await CrossFacebookClient.Current.QueryDataAsync("me/feed", new string[] { "user_posts" });
+                var jo = JObject.Parse(post.Data.Replace("(", "[").Replace(@"\U", "\\\\U").Replace(");", "],").Replace(" = ", ":").Replace(";", ","));
+
+                ListPostedMessages = new List<ProfileData>();                 for (int i = 0; i < ((JArray)jo["data"]).Count; i++)
+                {                     try   {   Message = jo["data"][i]["message"].ToString(); }
+                    catch {   Message = "";                                  }
+
+                    try   {   Story = jo["data"][i]["story"].ToString(); }
+					catch {   Story = ""; } 
+                    ListPostedMessages.Add(new ProfileData() { MessagePosted = Message , Story = Story });
+                }             }
 		} 
 		private void FillData()
 		{
