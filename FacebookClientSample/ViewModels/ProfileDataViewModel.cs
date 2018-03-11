@@ -7,7 +7,7 @@ using Plugin.FacebookClient; using Plugin.FacebookClient.Abstractions; using
 		public ProfileData       Profile                  { get; set; }
 		public Command           FillPrincipalDataCommand { get; set; }
 		public Command<string>   PostMessageCommand       { get; set; }
-		public string            MessagePost              { get; set; } = string.Empty; 
+		public string            MessagePost              { get; set; } = string.Empty;
 		static FacebookResponse<Dictionary<string, object>> attrs;
 		static bool              IsLogin;
 		string Message           = string.Empty;
@@ -22,12 +22,11 @@ using Plugin.FacebookClient; using Plugin.FacebookClient.Abstractions; using
 		public async void FillPrincipalData()
 		{
 
-			FacebookResponse<bool> resp = await CrossFacebookClient.Current.LoginAsync ( new string[] { "email" }  ); 
+           FacebookResponse<bool> resp = await CrossFacebookClient.Current.LoginAsync ( new string[] { "email", "public_profile", "user_friends" }  ); 
 			attrs = await CrossFacebookClient.Current.RequestUserDataAsync
-		  (
-				  new string[] { "id", "name", "picture", "cover", "friends" },
-				  new string[] { "email", "public_profile", "user_friends" }
-		  );
+		   (
+				  new string[] { "id", "name", "picture", "cover", "friends" },  new string[] { }
+		   );             
             IsLogin = true;
 			await App.Navigation.PushAsync(new MyProfile());
 		}
@@ -40,7 +39,7 @@ using Plugin.FacebookClient; using Plugin.FacebookClient.Abstractions; using
 																{
 																   {"message" ,message}
 															   }
-															);             MessagePost = string.Empty;
+															);             MessagePost = string.Empty;              ReadPost();
 		}
 
 		public async void ReadPost()

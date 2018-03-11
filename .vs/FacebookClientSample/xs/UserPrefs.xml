@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{A37BFC58-8806-4F92-ADE7-14ED08F6A248}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookClientSample/ViewModels/ProfileDataViewModel.cs">
+    <Files>
+      <File FileName="FacebookClientSample/ViewModels/ProfileDataViewModel.cs" Line="59" Column="11" />
+      <File FileName="FacebookClientSample/Views/MyProfile.xaml" Line="22" Column="15" />
+      <File FileName="FacebookClientSample/Views/MyProfile.xaml.cs" Line="14" Column="54" />
+      <File FileName="FacebookClientSample/Views/FacebookClientSamplePage.cs" Line="17" Column="14" />
+      <File FileName="FacebookClientSample/Helpers/Utilities.cs" Line="21" Column="9" />
+      <File FileName="FacebookClientSample/Models/ProfileData.cs" Line="9" Column="2" />
+      <File FileName="FacebookClientSample/.gitignore" Line="1" Column="1" />
+      <File FileName="FacebookClientSample/App.xaml.cs" Line="7" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/leomaris/Documents/Leomaris Reyes Projects/FacebookClientSample/FacebookClientSample/Views/MyProfile.xaml" relfile="FacebookClientSample/Views/MyProfile.xaml" line="28" column="54" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FacebookClientSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.567BF666-89CB-47EA-844F-119CC2C22AB6" />
+  <MonoDevelop.Ide.ItemProperties.FacebookClientSample.Droid PreferredExecutionTarget="Android.SelectDevice" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+</Properties>
