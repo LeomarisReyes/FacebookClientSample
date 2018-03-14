@@ -9,7 +9,7 @@ using Plugin.FacebookClient; using Plugin.FacebookClient.Abstractions; using
 		public Command<string>   PostMessageCommand       { get; set; }
 		public string            MessagePost              { get; set; } = string.Empty;
 		static FacebookResponse<Dictionary<string, object>> attrs;
-		static bool              IsLogin;
+        static bool IsLogin      = false;
 		string Message           = string.Empty;
 		string Story             = string.Empty; 
 		public ProfileDataViewModel()
@@ -26,8 +26,9 @@ using Plugin.FacebookClient; using Plugin.FacebookClient.Abstractions; using
 			attrs = await CrossFacebookClient.Current.RequestUserDataAsync
 		   (
 				  new string[] { "id", "name", "picture", "cover", "friends" },  new string[] { }
-		   );             
-            IsLogin = true;
+		   );
+
+            IsLogin = true; 
 			await App.Navigation.PushAsync(new MyProfile());
 		}
 
@@ -52,8 +53,8 @@ using Plugin.FacebookClient; using Plugin.FacebookClient.Abstractions; using
                 {                     try   {   Message = jo["data"][i]["message"].ToString(); }
                     catch {   Message = "";                                  }
 
-                    try   {   Story = jo["data"][i]["story"].ToString(); }
-					catch {   Story = ""; } 
+                    try   {   Story = jo["data"][i]["story"].ToString();     }
+					catch {   Story = "";                                    } 
                     ListPostedMessages.Add(new ProfileData() { MessagePosted = Message , Story = Story });
                 }             }
 		} 
