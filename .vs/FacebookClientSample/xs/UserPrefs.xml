@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{A37BFC58-8806-4F92-ADE7-14ED08F6A248}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookClientSample/ViewModels/ProfileDataViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
     <Files>
-      <File FileName="FacebookClientSample/ViewModels/ProfileDataViewModel.cs" Line="2" Column="34" />
+      <File FileName="FacebookClientSample/ViewModels/ProfileDataViewModel.cs" Line="72" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
