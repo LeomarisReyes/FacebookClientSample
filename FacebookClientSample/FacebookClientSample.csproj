@@ -30,7 +30,7 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="Views\FacebookClientSamplePage.xaml" />
-    <EmbeddedResource Include="Views\MyProfile.xaml">
+    <EmbeddedResource Include="Views\MyProfilePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -39,15 +39,16 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\ProfileData.cs" />
+    <Compile Include="Models\FaceBookData.cs" />
     <Compile Include="Views\FacebookClientSamplePage.cs">
       <DependentUpon>FacebookClientSamplePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MyProfile.xaml.cs">
-      <DependentUpon>MyProfile.xaml</DependentUpon>
+    <Compile Include="Views\MyProfilePage.xaml.cs">
+      <DependentUpon>MyProfilePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ProfileDataViewModel.cs" />
     <Compile Include="Helpers\Utilities.cs" />
+    <Compile Include="Models\PostData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

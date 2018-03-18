@@ -14,8 +14,7 @@ namespace FacebookClientSample
             if(Device.RuntimePlatform == Device.iOS)
             {
                 this.Padding = new Thickness(0, 20, 0, 0);
-            }
-			//  NavigationPage.SetHasNavigationBar(this, false);
+            } 
 		}
     }
 }

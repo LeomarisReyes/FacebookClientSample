@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookClientSample.MyProfile">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FacebookClientSample.MyProfilePage">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="FillAndExpand" Spacing="2" BackgroundColor="#DCE9F7"> 
             <StackLayout HeightRequest="240">
@@ -18,7 +18,7 @@
             </StackLayout>
             <ScrollView>
             <StackLayout>
-                 <ListView x:Name="lbPost" BackgroundColor="Transparent" HasUnevenRows="true" HorizontalOptions="FillAndExpand" ItemsSource="{Binding ListPostedMessages}">
+                 <ListView x:Name="lbPost" BackgroundColor="Transparent" HasUnevenRows="true" HorizontalOptions="FillAndExpand" ItemsSource="{Binding Posts}">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <ViewCell>
