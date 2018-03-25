@@ -122,17 +122,11 @@
       <HintPath>..\packages\Xamarin.Facebook.Android.4.26.0\lib\MonoAndroid70\Xamarin.Facebook.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.FacebookClient.Abstractions">
-      <HintPath>..\packages\Plugin.FacebookClient.1.0.2\lib\MonoAndroid10\Plugin.FacebookClient.Abstractions.dll</HintPath>
+      <HintPath>..\packages\Plugin.FacebookClient.1.1.1-alpha\lib\MonoAndroid10\Plugin.FacebookClient.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.FacebookClient">
-      <HintPath>..\packages\Plugin.FacebookClient.1.0.2\lib\MonoAndroid10\Plugin.FacebookClient.dll</HintPath>
+      <HintPath>..\packages\Plugin.FacebookClient.1.1.1-alpha\lib\MonoAndroid10\Plugin.FacebookClient.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\FacebookClientSample\FacebookClientSample.csproj">
-      <Project>{A79F3617-CD4A-41D9-97C0-11BF1C504E68}</Project>
-      <Name>FacebookClientSample</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -154,6 +148,12 @@
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FacebookClientSample\FacebookClientSample.csproj">
+      <Project>{A79F3617-CD4A-41D9-97C0-11BF1C504E68}</Project>
+      <Name>FacebookClientSample</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

@@ -99,10 +99,10 @@
       <HintPath>..\packages\Xamarin.Facebook.iOS.4.27.1\lib\Xamarin.iOS10\Facebook.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.FacebookClient.Abstractions">
-      <HintPath>..\packages\Plugin.FacebookClient.1.0.2\lib\Xamarin.iOS10\Plugin.FacebookClient.Abstractions.dll</HintPath>
+      <HintPath>..\packages\Plugin.FacebookClient.1.1.1-alpha\lib\Xamarin.iOS10\Plugin.FacebookClient.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.FacebookClient">
-      <HintPath>..\packages\Plugin.FacebookClient.1.0.2\lib\Xamarin.iOS10\Plugin.FacebookClient.dll</HintPath>
+      <HintPath>..\packages\Plugin.FacebookClient.1.1.1-alpha\lib\Xamarin.iOS10\Plugin.FacebookClient.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

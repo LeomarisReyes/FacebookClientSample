@@ -47,7 +47,6 @@
       <DependentUpon>MyProfilePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\ProfileDataViewModel.cs" />
-    <Compile Include="Helpers\Utilities.cs" />
     <Compile Include="Models\PostData.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -63,17 +62,17 @@
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
       <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\netstandard1.1\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
     </Reference>
-    <Reference Include="Plugin.FacebookClient.Abstractions">
-      <HintPath>..\packages\Plugin.FacebookClient.1.0.2\lib\netstandard1.0\Plugin.FacebookClient.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.FacebookClient">
-      <HintPath>..\packages\Plugin.FacebookClient.1.0.2\lib\netstandard1.0\Plugin.FacebookClient.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PropertyChanged">
       <HintPath>..\packages\PropertyChanged.Fody.2.2.9\lib\netstandard1.0\PropertyChanged.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.FacebookClient.Abstractions">
+      <HintPath>..\packages\Plugin.FacebookClient.1.1.1-alpha\lib\netstandard1.0\Plugin.FacebookClient.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.FacebookClient">
+      <HintPath>..\packages\Plugin.FacebookClient.1.1.1-alpha\lib\netstandard1.0\Plugin.FacebookClient.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -85,7 +84,6 @@
     <Folder Include="Models\" />
     <Folder Include="Views\" />
     <Folder Include="ViewModels\" />
-    <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.231\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

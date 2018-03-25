@@ -1,9 +1,31 @@
-﻿<Properties StartupConfiguration="{A37BFC58-8806-4F92-ADE7-14ED08F6A248}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
+﻿<Properties StartupConfiguration="{A37BFC58-8806-4F92-ADE7-14ED08F6A248}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FacebookClientSample/ViewModels/ProfileDataViewModel.cs">
     <Files>
-      <File FileName="FacebookClientSample/ViewModels/ProfileDataViewModel.cs" Line="72" Column="1" />
+      <File FileName="FacebookClientSample/ViewModels/ProfileDataViewModel.cs" Line="23" Column="19" />
       <File FileName="iOS/Main.cs" Line="17" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FacebookClientSample" expanded="True">
+            <Node name="FacebookClientSample" expanded="True">
+              <Node name="ViewModels" expanded="True">
+                <Node name="ProfileDataViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True" />
+            </Node>
+            <Node name="FacebookClientSample.Droid" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="FacebookClientSample.iOS" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -12,5 +34,5 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.FacebookClientSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.567BF666-89CB-47EA-844F-119CC2C22AB6" automaticSigning="False" />
-  <MonoDevelop.Ide.ItemProperties.FacebookClientSample.Droid PreferredExecutionTarget="Android.SelectDevice" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.FacebookClientSample.Droid PreferredExecutionTarget="Android.01d16723cf9d46e2" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
 </Properties>
